@@ -40,7 +40,7 @@ body {
     z-index: 20;
     flex-shrink: 0;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     background-color: #121212;
     padding: calc(env(safe-area-inset-top) + 12px) 20px 12px 20px;
@@ -81,10 +81,19 @@ body {
 }
 
 .nav-button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     background: transparent;
     border: none;
     color: #8E8E98;
     font-size: 12px;
+}
+
+.nav-button svg {
+    width: 24px;
+    height: 24px;
 }
 
 .nav-button.active {
