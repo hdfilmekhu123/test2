@@ -136,7 +136,7 @@ body {
     display: flex;
     align-items: center;
     background: #FFFFFF;
-    color: #111111;
+    color: #000000;
 }
 
 .sort-button svg {
