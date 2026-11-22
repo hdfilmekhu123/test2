@@ -35,15 +35,12 @@ body {
 }
 
 .app-header {
-    position: sticky;
-    top: 0;
-    z-index: 20;
     flex-shrink: 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: #121212;
-    padding: calc(env(safe-area-inset-top) + 12px) 20px 12px 20px;
+    padding: calc(env(safe-area-inset-top) + 12px) 0 12px 0;
 }
 
 .main-content {
@@ -100,6 +97,18 @@ body {
 
 .nav-button.active {
     color: #FFFFFF;
+}
+
+.nav-button .icon-filled {
+    display: none;
+}
+
+.nav-button.active .icon-filled {
+    display: block;
+}
+
+.nav-button.active .icon-outline {
+    display: none;
 }
 
 .add-button {
