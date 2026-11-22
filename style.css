@@ -43,7 +43,7 @@ body {
     justify-content: space-between;
     align-items: center;
     background-color: #121212;
-    padding: calc(env(safe-area-inset-top) + 12px) 0 12px 0;
+    padding: calc(env(safe-area-inset-top) + 12px) 20px 12px 20px;
 }
 
 .main-content {
@@ -57,21 +57,6 @@ body {
 
 .main-content::-webkit-scrollbar {
     display: none;
-}
-
-.page-top {
-    position: sticky;
-    top: 0;
-    z-index: 20;
-    background-color: #121212;
-}
-
-.page-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: calc(env(safe-area-inset-top) + 12px) 0 12px 0;
-    background-color: #121212;
 }
 
 .page {
@@ -131,13 +116,18 @@ body {
     height: 24px;
 }
 
-.library-bar {
+.page-header {
     position: sticky;
+    top: 0;
+    z-index: 10;
+
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-bottom: 12px;
+
     background-color: #121212;
+    margin: 0 -20px;
+    padding: 12px 20px;
 }
 
 .page-header p {
@@ -162,11 +152,9 @@ body {
 }
 
 .song-list {
-    flex: 1;
-    min-height: 0;
-    overflow-y: auto;
     scrollbar-width: none;
     -ms-overflow-style: none;
+    margin-top: 10px;
     gap: 5px;
 }
 
