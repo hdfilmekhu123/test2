@@ -43,7 +43,7 @@ body {
     justify-content: space-between;
     align-items: center;
     background-color: #121212;
-    padding: calc(env(safe-area-inset-top) + 12px) 20px 12px 20px;
+    padding: calc(env(safe-area-inset-top) + 12px) 0 12px 0;
 }
 
 .main-content {
@@ -52,11 +52,25 @@ body {
     overflow-y: auto;
     -webkit-overflow-scrolling: touch;
     scrollbar-width: none;
-    padding: 12px 20px 24px 20px;
+    padding: 0 20px 24px 20px;
 }
 
 .main-content::-webkit-scrollbar {
     display: none;
+}
+
+.page-top {
+    position: sticky;
+    top: 0;
+    z-index: 20;
+    background-color: #121212;
+}
+
+.page-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: calc(env(safe-area-inset-top) + 12px) 0 12px 0;
 }
 
 .page {
@@ -116,11 +130,12 @@ body {
     height: 24px;
 }
 
-.page-header {
+.library-bar {
     position: sticky;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding-bottom: 12px;
 }
 
 .page-header p {
@@ -150,7 +165,6 @@ body {
     overflow-y: auto;
     scrollbar-width: none;
     -ms-overflow-style: none;
-    margin-top: 10px;
     gap: 5px;
 }
 
