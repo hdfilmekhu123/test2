@@ -1,4 +1,4 @@
-const CACHE_NAME = "nuclear-music-player-v2.1";
+const CACHE_NAME = "nuclear-music-player-v2.2";
 
 const FILES_TO_CACHE = [
     "./",
