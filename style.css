@@ -63,7 +63,7 @@ body {
     display: none;
 }
 
-.page.active {
+.page-active {
     display: block;
 }
 
@@ -214,6 +214,94 @@ body {
 }
 
 .more-button svg {
+    color: #FFFFFF;
+    width: 18px;
+    height: 18px;
+}
+
+#search-page.page-active {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    min-height: 0;
+    overflow: hidden;
+}
+
+.clear-button {
+    gap: 8px;
+    font-size: 15px;
+    border: none;
+    display: flex;
+    align-items: center;
+    background: none;
+    color: #9146FF;
+}
+
+.search-container {
+    display: flex;
+    gap: 10px;
+    padding: 12px;
+    border-radius: 30px;
+    align-items: center;
+    background: #FFFFFF;
+    margin-bottom: 12px;
+}
+
+.search-container svg {
+    color: #000000;
+}
+
+.search-input {
+    flex: 1;
+    min-width: 0;
+    background: none;
+    border: none;
+    outline: none;
+    font-size: 15px;
+}
+
+.history-list {
+    flex: 1;
+    min-height: 0;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    overscroll-behavior-y: contain;
+    display: flex;
+    flex-direction: column;
+    margin-top: 12px;
+    gap: 10px;
+}
+
+.history-list::-webkit-scrollbar {
+    display: none;
+}
+
+.history-main {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+.history-main p {
+    color: #FFFFFF;
+    text-transform: lowercase;
+}
+
+.history-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #B4B4B4;
+}
+
+.remove-button {
+    background: transparent;
+    border: none;
+    align-items: center;
+}
+
+.remove-button svg {
     color: #FFFFFF;
     width: 18px;
     height: 18px;
