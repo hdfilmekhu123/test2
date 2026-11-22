@@ -49,9 +49,7 @@ body {
 .main-content {
     flex: 1;
     min-height: 0;
-    overflow-y: auto;
-    -webkit-overflow-scrolling: touch;
-    scrollbar-width: none;
+    overflow: hidden;
     padding: 0 20px 24px 20px;
 }
 
@@ -116,18 +114,20 @@ body {
     height: 24px;
 }
 
-.page-header {
-    position: sticky;
-    top: 0;
-    z-index: 10;
+#home-page.page-active {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    min-height: 0;
+}
 
+.page-header {
+    position: static;
+    flex-shrink: 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
-
     background-color: #121212;
-    margin: 0 -20px;
-    padding: 12px 20px;
 }
 
 .page-header p {
@@ -152,8 +152,11 @@ body {
 }
 
 .song-list {
-    scrollbar-width: none;
-    -ms-overflow-style: none;
+    flex: 1;
+    min-height: 0;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    overscroll-behavior-y: contain;
     margin-top: 10px;
     gap: 5px;
 }
